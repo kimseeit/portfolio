@@ -14,7 +14,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #bc92ff;
+    background-color: #a292ff;
     padding: 3px 12px;
     font-family: 'Lobster', cursive;
 }
@@ -36,7 +36,7 @@ a{
 }
 
 .navbar_menu li:hover{
-    background-color: #ab76ff;
+    background-color: #8771ff;
     border-radius: 4px;
 
 }
@@ -196,7 +196,7 @@ ul > li > a:hover .bottom{top: 52%;}
 }
 
 footer{
-    background-color: #594b66;
+    background-color: #a292ff;
     width: 100%;
     height: 100px;
 
