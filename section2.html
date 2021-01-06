@@ -8,7 +8,7 @@
         <div class="navbar_menu">
             <li><a href="http://127.0.0.1:5500/portfoilo.html">Who am I</a></li>
             <li><a href="http://127.0.0.1:5500/section1.html">Team</a></li>
-            <li><a href="http://127.0.0.1:5500/section2.html">Gallery</a></li>
+            <li><a href="http://127.0.0.1:5500/section2.html">Gallery&Individual</a></li>
             <li><a href="http://127.0.0.1:5500/section3.html">Subject class</a></li>
         </div>
     </nav>
@@ -56,17 +56,17 @@
             <li>
                 <a href="">
                     <div class="screen">
-                        <div class="top">변형</div>
-                        <div class="bottom">타이포그라피 디자인</div>
-                        <img src="https://ifh.cc/g/eP6Kzd.jpg">
+                        <div class="top">실크 스크린</div>
+                        <div class="bottom">v lab</div>
+                        <img src="https://ifh.cc/g/g9UABA.jpg" style="height: 79%;">
                     </div>
                 </a>
             </li>
             <li>
                 <a href="">
                     <div class="screen">
-                        <div class="top">오버프린팅</div>
-                        <div class="bottom">타이포그라피 디자인</div>
+                        <div class="top">실크 스크린</div>
+                        <div class="bottom">v lab</div>
                         <img src="https://ifh.cc/g/qCdJPZ.jpg">
                     </div>
                 </a>
@@ -74,9 +74,56 @@
         </ul>
     </div>
 </div>
+
+<div id="slide" style="padding-top: 10%;">
+    <div class="sulmyung" style="padding-left: 38%; padding-bottom: 10px;"><h1>그 외 개인 프로젝트</h1></div>
+    <input type="radio" name="pos" id="pos1" checked>
+    <input type="radio" name="pos" id="pos2">
+    <input type="radio" name="pos" id="pos3">
+    <input type="radio" name="pos" id="pos4">
+    <ul>
+      <li><img src="https://ifh.cc/g/UrnS5a.jpg" style="width: 600px; height: 500px; padding-left: 27%;"></li>
+      <li><img src="https://ifh.cc/g/ClxvfK.jpg" style="width: 600px; height: 500px; padding-left: 27%;"></li>
+      <li><img src="https://ifh.cc/g/AgzQqr.jpg" style="width: 600px; height: 500px; padding-left: 27%;"></li>
+      <li><img src="https://ifh.cc/g/tQhZOQ.jpg" style="width: 600px; height: 500px; padding-left: 27%;"></li>
+    </ul>
+    <p class="pos">
+      <label for="pos1"></label>
+      <label for="pos2"></label>
+      <label for="pos3"></label>
+      <label for="pos4"></label>
+    </p>
+    </div>
+</div>
+
+
+<div id="slide2" style="padding-top: 10%;">
+    <input type="radio" name="pos" id="pos5" checked>
+    <input type="radio" name="pos" id="pos6">
+    <input type="radio" name="pos" id="pos7">
+    <input type="radio" name="pos" id="pos8">
+    <ul>
+      <li><img src="https://ifh.cc/g/khxtMG.jpg" style="width: 600px; height: 500px; padding-left: 27%;"></li>
+      <li><img src="https://ifh.cc/g/IDpm4n.jpg" style="width: 600px; height: 500px; padding-left: 27%;"></li>
+      <li><img src="https://ifh.cc/g/R4rcBv.jpg" style="width: 600px; height: 500px; padding-left: 27%;"></li>
+      <li><img src="https://ifh.cc/g/zsXjKf.png" style="width: 600px; height: 500px; padding-left: 27%;"></li>
+    </ul>
+    <p class="pos">
+      <label for="pos5"></label>
+      <label for="pos6"></label>
+      <label for="pos7"></label>
+      <label for="pos8"></label>
+    </p>
+    </div>
+</div>
+
 </div>
 <style>
      @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+     .section3{
+         background-color: aliceblue;
+     }
 
     .gallerylist1{
     max-width: 1200px;
@@ -211,4 +258,56 @@ a{
         width: 100%;
     }
 }
+
+*{margin:0;padding:0;}
+  ul,li{list-style:none;}
+  #slide{height:500px;position:relative;overflow:hidden;}
+  #slide ul{width:400%; height:100%;transition:1s;}
+  #slide ul:after{content:"";display:block;clear:both;}
+  #slide li{float:left;width:25%;height:100%;}
+
+  #slide li:nth-child(1){background: #a292ff;}
+  #slide li:nth-child(2){background: #a292ff;}
+  #slide li:nth-child(3){background: #a292ff;}
+  #slide li:nth-child(4){background: #a292ff;}
+
+  #slide input{display:none;}
+  #slide label{display:inline-block;vertical-align:middle;width:10px;height:10px;border:2px solid #666;background:#fff;transition:0.3s;border-radius:50%;cursor:pointer;}
+  #slide .pos{text-align:center;position:absolute;bottom:10px;left:0;width:100%;text-align:center;}
+  
+  #pos1:checked~ul{margin-left:0%;}
+  #pos2:checked~ul{margin-left:-100%;}
+  #pos3:checked~ul{margin-left:-200%;}
+  #pos4:checked~ul{margin-left:-300%;}
+
+  #pos1:checked~.pos>label:nth-child(1){background:#666;}
+  #pos2:checked~.pos>label:nth-child(2){background:#666;}
+  #pos3:checked~.pos>label:nth-child(3){background:#666;}
+  #pos4:checked~.pos>label:nth-child(4){background:#666;}
+
+  *{margin:0;padding:0;}
+  ul,li{list-style:none;}
+  #slide2{height:500px;position:relative;overflow:hidden;}
+  #slide2 ul{width:400%; height:100%;transition:1s;}
+  #slide2 ul:after{content:"";display:block;clear:both;}
+  #slide2 li{float:left;width:25%;height:100%;}
+
+  #slide2 li:nth-child(1){background: #a292ff;}
+  #slide2 li:nth-child(2){background: #a292ff;}
+  #slide2 li:nth-child(3){background: #a292ff;}
+  #slide2 li:nth-child(4){background: #a292ff;}
+
+  #slide2 input{display:none;}
+  #slide2 label{display:inline-block;vertical-align:middle;width:10px;height:10px;border:2px solid #666;background:#fff;transition:0.3s;border-radius:50%;cursor:pointer;}
+  #slide2 .pos{text-align:center;position:absolute;bottom:10px;left:0;width:100%;text-align:center;}
+  
+  #pos5:checked~ul{margin-left:0%;}
+  #pos6:checked~ul{margin-left:-100%;}
+  #pos7:checked~ul{margin-left:-200%;}
+  #pos8:checked~ul{margin-left:-300%;}
+
+  #pos5:checked~.pos>label:nth-child(1){background:#666;}
+  #pos6:checked~.pos>label:nth-child(2){background:#666;}
+  #pos7:checked~.pos>label:nth-child(3){background:#666;}
+  #pos8:checked~.pos>label:nth-child(4){background:#666;}
 </style>
